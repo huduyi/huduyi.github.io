@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="emacs,orgmode,hexo," />
 
 
 
@@ -94,13 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="笨牛棚">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Table of Contents   1. 起始 2. 测试 hexo-org-renderer      1 起始   其实以前也写过博客，也是用 hexo 去弄得一个博客，还专门搞了个域名 `curiousbull.xyz`, 不过，作废啦！！！ 太懒？太麻烦？好吧，“三千烦恼丝，健康新开始”，哈哈。    经过这么一两年折腾，包括 emacs">
+<meta name="keywords" content="emacs,orgmode,hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一篇博客">
+<meta property="og:url" content="http://yoursite.com/2017/08/10/firstpost/index.html">
 <meta property="og:site_name" content="笨牛棚">
+<meta property="og:description" content="Table of Contents   1. 起始 2. 测试 hexo-org-renderer      1 起始   其实以前也写过博客，也是用 hexo 去弄得一个博客，还专门搞了个域名 `curiousbull.xyz`, 不过，作废啦！！！ 太懒？太麻烦？好吧，“三千烦恼丝，健康新开始”，哈哈。    经过这么一两年折腾，包括 emacs">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-08-10T14:58:45.731Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="笨牛棚">
+<meta name="twitter:title" content="第一篇博客">
+<meta name="twitter:description" content="Table of Contents   1. 起始 2. 测试 hexo-org-renderer      1 起始   其实以前也写过博客，也是用 hexo 去弄得一个博客，还专门搞了个域名 `curiousbull.xyz`, 不过，作废啦！！！ 太懒？太麻烦？好吧，“三千烦恼丝，健康新开始”，哈哈。    经过这么一两年折腾，包括 emacs">
 
 
 
@@ -129,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/10/firstpost/"/>
 
 
 
 
 
-  <title>笨牛棚</title>
+  <title>第一篇博客 | 笨牛棚</title>
   
 
 
@@ -154,9 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -259,9 +262,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -291,9 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/10/firstpost/" itemprop="url">第一篇博客</a></h1>
+          <h1 class="post-title" itemprop="name headline">第一篇博客</h1>
         
 
         <div class="post-meta">
@@ -377,8 +378,6 @@
 
       
         
-          
-            
 
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
@@ -463,8 +462,6 @@ Getting Things Done
 <p class="date">Created: 2017-08-10 周四 22:59</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer" target="_blank" rel="external">Validate</a></p>
 
-          
-        
       
     </div>
     
@@ -479,14 +476,24 @@ Getting Things Done
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/emacs/" rel="tag"># emacs</a>
+          
+            <a href="/tags/orgmode/" rel="tag"># orgmode</a>
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -496,10 +503,11 @@ Getting Things Done
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -507,6 +515,10 @@ Getting Things Done
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -527,8 +539,17 @@ Getting Things Done
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -590,6 +611,22 @@ Getting Things Done
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Table of Contents</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org2bd8e38"><span class="nav-number">2.</span> <span class="nav-text">1 起始</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgbac63c2"><span class="nav-number">3.</span> <span class="nav-text">2 测试 hexo-org-renderer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Footnotes: </span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -716,10 +753,10 @@ Getting Things Done
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
